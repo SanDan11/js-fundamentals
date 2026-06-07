@@ -5,14 +5,27 @@ const bassInventory = [
     {brand: "Aria", model: "SB-1000", tuning: " Eb Standard"}
 ]
 
-bassInventory.push({brand: "BC Rich", model: "Warlock", tuning: "Dropped C"});
+function createBassList(basses, bass) {
+        if (basses.indexOf(bass) === -1){
+            basses.push(bass);
+        console.log(`New guitar added to collection is: ${basses}`);
+    } else 
+    {
+        console.log(`${basses} already exist in the list.`);
+    }
+}
 
-bassInventory[0].tuning = "A standard";
 
-bassInventory.splice(2, 1);
-// bassInventory.splice(2, 2);
-// bassInventory.splice(2, 0);
+function readBassList(basses, bass) {
+        for (const bass of basses) {
+            console.log(bass);
+        }
+}
 
-for (const bass of bassInventory) {
-    console.log(`${bass.brand} ${bass.model} - ${bass.tuning}`)
+function updateBass(basses, index, newBass) {
+
+}
+
+function deleteBass(bass, index) {
+    
 }
