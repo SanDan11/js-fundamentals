@@ -22,3 +22,7 @@ const bassInventory = [
 // console.log(second);
 // console.log(rest);
 
+const [ first ] = bassInventory;
+
+const { brand, model } = first;
+console.log(`First bass: ${brand} ${model}`);
